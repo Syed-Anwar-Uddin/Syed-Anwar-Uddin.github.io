@@ -1,0 +1,69 @@
+baseURL = "https://syed-anwar-uddin.github.io/"
+languageCode = "en-us"
+title = "Syed Anwaruddin"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.highlight]
+  noClasses = false
+  codeFences = true
+  guessSyntax = true
+  lineNos = true
+  style = "monokai"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  env = "production"
+  title = "Syed Anwaruddin"
+  description = "Systems, networking, and internet measurement."
+  keywords = ["Rust", "Systems", "Network Security", "Internet Measurement", "TLS"]
+  author = "Syed Anwaruddin"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowToc = true
+  TocOpen = false
+  comments = false
+
+  [params.homeInfoParams]
+    Title = "Syed Anwaruddin"
+    Content = """
+Backend systems engineer working on internet measurement infrastructure in Rust. Currently building [LYNX](/posts/), a unified L4+L7 TLS scanner.
+
+CS undergrad at Osmania University. Reach out: syedanwaruddin08@gmail.com
+"""
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Syed-Anwar-Uddin"
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:syedanwaruddin08@gmail.com"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/syed-anwar-uddin/"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[params.social]
+  twitter = ""
